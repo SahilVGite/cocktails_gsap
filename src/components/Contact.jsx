@@ -44,8 +44,8 @@ const Contact = () => {
  
  return (
 	<footer id="contact">
-	 <img src="/images/footer-right-leaf.png" alt="leaf-right" id="f-right-leaf" />
-	 <img src="/images/footer-left-leaf.png" alt="leaf-left" id="f-left-leaf" />
+	 <img src="/cocktails_gsap/images/footer-right-leaf.png" alt="leaf-right" id="f-right-leaf" />
+	 <img src="/cocktails_gsap/images/footer-left-leaf.png" alt="leaf-left" id="f-left-leaf" />
 	 <div className="content">
 		<h2>Where to Find Us</h2>
 		<div>
@@ -68,7 +68,7 @@ const Contact = () => {
 		 <div className="flex-center gap-5">
 			{socials.map((social) => (
 			 <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name} >
-				<img src={social.icon} />
+				<img src={'/cocktails_gsap/' + social.icon} />
 			 </a>
 			))}
 		 </div>

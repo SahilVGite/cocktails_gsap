@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav>
       <div>
         <a href="#hero" className='flex items-center gap-2' onClick={(e) => {e.preventDefault();document.getElementById('hero')?.scrollIntoView({ behavior: "smooth" });}}>
-          <img src="/images/logo.png" alt="Logo" />
+          <img src="/cocktails_gsap/images/logo.png" alt="Logo" />
             <p>Velvet Pour</p>
         </a>
 

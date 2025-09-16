@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav>
       <div>
-        <a href="#home" className='flex items-center gap-2'>
+        <a href="#hero" className='flex items-center gap-2' onClick={(e) => {e.preventDefault();document.getElementById('hero')?.scrollIntoView({ behavior: "smooth" });}}>
           <img src="/images/logo.png" alt="Logo" />
             <p>Velvet Pour</p>
         </a>
@@ -34,7 +34,7 @@ const Navbar = () => {
         <ul>
             {navLinks.map((link) => (
                 <li key={link.id}>
-                    <a href={`#${link.id}`}>{link.title}</a>
+                    <a href={`#${link.id}`} onClick={(e) => {e.preventDefault();document.getElementById(link.id)?.scrollIntoView({ behavior: "smooth" });}}>{link.title}</a>
                 </li>
             ))}
         </ul>

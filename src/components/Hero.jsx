@@ -36,8 +36,7 @@ const Hero = () => {
 	 delay: 1,
 	});
 	
-	gsap
-	.timeline({
+	gsap.timeline({
 	 scrollTrigger: {
 		trigger: "#hero",
 		start: "top top",
